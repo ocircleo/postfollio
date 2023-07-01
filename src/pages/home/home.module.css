@@ -1,0 +1,106 @@
+.blobyanimation {
+    animation: bloby 8s infinite linear;
+    width: 100%;
+}
+.blobyanimation2 {
+    animation: bloby 8s 2s infinite linear;
+    width: 100%;
+    border-radius: 50% 35% 45% 50%;
+}
+.blobyanimation3 {
+    animation: bloby 8s 4s infinite linear;
+    width: 100%;
+    border-radius: 50% 35% 45% 50%;
+}
+@media screen and (min-width:300px) {
+    .blobyanimation{
+        width: 300px;
+    }
+    .blobyanimation2{
+        width: 300px;
+    }
+    .blobyanimation3{
+        width: 300px;
+    }
+}
+@media screen and (min-width:400px) {
+    .blobyanimation{
+        width: 400px;
+    }
+    .blobyanimation2{
+        width: 400px;
+    }
+    .blobyanimation3{
+        width: 400px;
+    }
+}
+@media screen and (min-width:400px) {
+    .blobyanimation{
+        width: 400px;
+    }
+    .blobyanimation2{
+        width: 400px;
+    }
+    .blobyanimation3{
+        width: 400px;
+    }
+}
+@media screen and (min-width:1240px) {
+    .blobyanimation{
+        width: 500px;
+    }
+    .blobyanimation2{
+        width: 500px;
+    }
+    .blobyanimation3{
+        width: 500px;
+    }
+}
+@media screen and (min-width:1340px) {
+    .blobyanimation{
+        width: 550px;
+    }
+    .blobyanimation2{
+        width: 550px;
+    }
+    .blobyanimation3{
+        width: 550px;
+    }
+}
+@media screen and (min-width:1680px) {
+    .blobyanimation{
+        width: 600px;
+    }
+    .blobyanimation2{
+        width: 600px;
+    }
+    .blobyanimation3{
+        width: 600px;
+    }
+}
+
+@keyframes bloby {
+    0% {
+        border-radius: 50% 35% 45% 50%;
+    }
+
+    30% {
+        border-radius: 35% 50% 45% 50%;
+
+    }
+
+    50% {
+
+        border-radius: 50% 45% 50% 35%;
+    }
+
+    70% {
+
+        border-radius: 45% 50% 35% 50%;
+    }
+
+    100% {
+        border-radius: 50% 35% 45% 50%;
+
+    }
+}

@@ -1,0 +1,27 @@
+.active {
+    color: rgb(99 102 241);
+
+}
+
+.pending {
+    color: lightskyblue;
+
+}
+
+.deafultlink {
+    color: black;
+
+}
+
+.active,
+.deafultlink,
+.pending {
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.active:hover,
+.deafultlink:hover,
+.pending:hover {
+    color: crimson;
+}
