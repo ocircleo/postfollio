@@ -1,4 +1,5 @@
-import Contact from './Contact/Contact';
+
+import Contact from '../../shared/cotact/Contact';
 import Welcomehome from './Welcomehome'
 import Projects from './projects/Projects';
 import Skills from './skills/Skills';

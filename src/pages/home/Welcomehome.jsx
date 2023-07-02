@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Home = () => {
 
     return (
-        <div className='container mx-auto'>
+        <div className='container mx-auto' id='backtotop'>
             <div className=" flex  min-h-[300px] gap-5 md:flex-row flex-col">
                 <div className=' md:w-3/5 w-full p-5 min-h-[550px]  sm:h-auto rounded-md flex justify-center flex-col'>
                     <h2 className='text-4xl font-semibold py-4 '>Welcome to my website.</h2>
@@ -16,8 +16,8 @@ const Home = () => {
                         </span>
 
                     </h3>
-                    <p>Self-taught programmer with proficiency in the MERN stack, solid understanding of JavaScript, HTML, and CSS, Tailwind.Committed to continuous learning and staying updated with industry trends. Skilled in creating responsive user interfaces and building RESTful APIs</p>
-                    <h2 className='text-indigo-500 py-1 font-semibold text-xl'>My resume <Link toj="https://drive.google.com/file/d/1PMgqn2WsnBJzF7y-2d6_uFNhZ1kKFt5D/view?usp=sharing" target='_blank' className='bg-indigo-500 px-3 capitalize font-semibold rounded text-white cursor-pointer' rel="noreferrer">view</Link> </h2>
+                    <p className='pb-4'>Self-taught programmer with proficiency in the MERN stack, solid understanding of JavaScript, HTML, and CSS, Tailwind.Committed to continuous learning and staying updated with industry trends. Skilled in creating responsive user interfaces and building RESTful APIs</p>
+                    <Link to="https://drive.google.com/file/d/1PMgqn2WsnBJzF7y-2d6_uFNhZ1kKFt5D/view?usp=sharing" target='_blank' className='bg-indigo-500 w-28 z-50 px-3 py-2  capitalize font-semibold rounded text-white cursor-pointer' rel="noreferrer">My resume </Link>
                 </div>
                 <div className="relative md:w-2/5 w-full flex items-center justify-center h-[300px] md:h-[400px] xl:h-[500px]">
                     <img src={welcome} alt="" className='w-auto h-[100%] z-0  object-cover relative select-none' draggable={false} />

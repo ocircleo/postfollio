@@ -3,15 +3,24 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="../public/img/icon.jpg" />
+  <link rel="icon" type="image/svg+xml" href="/img/icon.jpg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./public/scroll.css">
+  <link rel="stylesheet" href="/scroll.css">
   <title>Vite + React</title>
 </head>
 
 <body>
   <div id="root"></div>
   <script type="module" src="/src/main.jsx"></script>
+
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("YOUR_PUBLIC_KEY");
+    })();
+  </script>
 </body>
 
 </html>

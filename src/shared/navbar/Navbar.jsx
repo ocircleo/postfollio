@@ -3,13 +3,13 @@ import { RxCross2 } from "react-icons/rx";
 import Activelink from "../activelink/Activelink";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import imgIcon from '../../../public/img/icon.jpg'
+import imgIcon from '/img/icon.jpg'
 const Navbar = () => {
     let [navState, setNavState] = useState(true)
     let links = <>
-        <li><Activelink to={'/'}>home</Activelink></li>
-        <li><Activelink to={'/blog'}>BLog</Activelink></li>
-        <li onClick={() => setNavState(!navState)}><a href="#contactme" className="font-semibold" >Contact</a></li>
+        <li onClick={() => setNavState(!navState)}><Activelink to={'/'}>home</Activelink></li>
+        <li onClick={() => setNavState(!navState)}><Activelink to={'/blogs'}>BLog</Activelink></li>
+        <li onClick={() => setNavState(!navState)}><Activelink to={'/contact'} className="font-semibold" >Contact</Activelink></li>
     </>
 
     return (<>
@@ -40,6 +40,7 @@ const Navbar = () => {
                 {links}
             </ul>
         </div>
+
     </>
 
     );

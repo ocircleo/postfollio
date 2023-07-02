@@ -7,7 +7,7 @@ import project2 from '/img/project2.jpeg'
 const Projects = () => {
     const [cardActive, setActive] = useState(false)
     const [cardActive2, setActive2] = useState(false)
-    return (<div  className="container mx-auto">
+    return (<div className="container mx-auto">
         <p className="text-2xl font-semibold text-center py-5">My Projects</p>
         <div className="flex sm:flex-row flex-col px-2 sm:px-1 justify-between gap-5">
             <div className="flex flex-col gap-3 rounded sm:min-w-96 p-2 border">
@@ -36,7 +36,8 @@ const Projects = () => {
                     <img src={project1} alt="" className="h-36 md:h-64 w-full bg-indigo-50 rounded object-cover " />
                 </div>
                 <h2 className="font-semibold">Name: Toy Stop</h2>
-                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium magni enim saepe quo repudiandae iure eligendi autem est! Ullam perferendis modi maiores harum inventore dicta nostrum deserunt alias, voluptas consequatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, cumque. Maxime optio ut laudantium natus, accusamus hic neque quis officia eaque facilis nulla veniam quam dignissimos, esse, aliquid quod omnis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis pariatur doloribus corporis ea distinctio, soluta et impedit voluptatibus voluptatem autem quasi eos quo debitis eum velit eius libero consectetur similique fugiat? Consectetur sed minus dolore illum, molestias natus ratione fuga dolorem est labore saepe harum maxime id, sit error nisi.</h3>
+                <h3 className="font-semibold">Techonology : MERN</h3>
+                <h3> <span className="font-semibold">Detaill</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium magni enim saepe quo repudiandae iure eligendi autem est! Ullam perferendis modi maiores harum inventore dicta nostrum deserunt alias, voluptas consequatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, cumque. Maxime optio ut laudantium natus, accusamus hic neque quis officia eaque facilis nulla veniam quam dignissimos, esse, aliquid quod omnis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis pariatur doloribus corporis ea distinctio, soluta et impedit voluptatibus voluptatem autem quasi eos quo debitis eum velit eius libero consectetur similique fugiat? Consectetur sed minus dolore illum, molestias natus ratione fuga dolorem est labore saepe harum maxime id, sit error nisi.</h3>
                 <div className="flex justify-center gap-1 sm:gap-5 mt-4 capitalize flex-shrink flex-wrap  sticky bg-white bottom-0 py-2">
                     <Link className="bg-indigo-500 rounded px-3 py-1 text-white">Live site</Link>
                     <Link className="bg-indigo-500 rounded px-3 py-1 text-white">github</Link>
@@ -56,7 +57,8 @@ const Projects = () => {
                     <img src={project2} alt="" className="h-36 md:h-64 w-full bg-indigo-50 rounded object-cover " />
                 </div>
                 <h2 className="font-semibold">Name: Fluent Verse</h2>
-                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium magni enim saepe quo repudiandae iure eligendi autem est! Ullam perferendis modi maiores harum inventore dicta nostrum deserunt alias, voluptas consequatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, cumque. Maxime optio ut laudantium natus, accusamus hic neque quis officia eaque facilis nulla veniam quam dignissimos, esse, aliquid quod omnis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis pariatur doloribus corporis ea distinctio, soluta et impedit voluptatibus voluptatem autem quasi eos quo debitis eum velit eius libero consectetur similique fugiat? Consectetur sed minus dolore illum, molestias natus ratione fuga dolorem est labore saepe harum maxime id, sit error nisi.</h3>
+                <h3 className="font-semibold">Techonology : MERN</h3>
+                <h3> <span className="font-semibold">Detaill</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium magni enim saepe quo repudiandae iure eligendi autem est! Ullam perferendis modi maiores harum inventore dicta nostrum deserunt alias, voluptas consequatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, cumque. Maxime optio ut laudantium natus, accusamus hic neque quis officia eaque facilis nulla veniam quam dignissimos, esse, aliquid quod omnis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis pariatur doloribus corporis ea distinctio, soluta et impedit voluptatibus voluptatem autem quasi eos quo debitis eum velit eius libero consectetur similique fugiat? Consectetur sed minus dolore illum, molestias natus ratione fuga dolorem est labore saepe harum maxime id, sit error nisi.</h3>
                 <div className="flex justify-center gap-1 sm:gap-5 mt-4 capitalize flex-shrink flex-wrap  sticky bg-white bottom-0 py-2">
                     <Link className="bg-indigo-500 rounded px-3 py-1 text-white">Live site</Link>
                     <Link className="bg-indigo-500 rounded px-3 py-1 text-white">github</Link>

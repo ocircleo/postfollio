@@ -1,6 +1,9 @@
 import App from "./App"
+import BLog from "./pages/blog/BLog"
+import BlogDeatill from "./pages/blog/BlogDeatill"
 import Home from "./pages/home/Home"
 import Skills from "./pages/home/skills/Skills"
+import Contact from "./shared/cotact/Contact"
 import ErrorPage from "./shared/error/ErrorPage"
 
 const Routes = [
@@ -14,7 +17,16 @@ const Routes = [
                 element: <Home></Home>,
             }, {
                 path: '/skill',
-                element:<Skills></Skills>
+                element: <Skills></Skills>
+            }, {
+                path: '/blogs',
+                element: <BLog></BLog>
+            }, {
+                path: '/blogs/:index',
+                element: <BlogDeatill></BlogDeatill>
+            }, {
+                path: '/contact',
+                element:<Contact></Contact>
             }
         ],
     }, {

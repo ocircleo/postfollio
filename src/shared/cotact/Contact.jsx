@@ -1,6 +1,10 @@
 import { IoCallOutline } from 'react-icons/io5';
 import { GoMail } from 'react-icons/go';
+import emailjs from '@emailjs/browser';
+import { useRef } from 'react';
+import Swal from 'sweetalert2';
 const Contact = () => {
+    const form = useRef()
     const copyEmail = () => {
         let text = 'salmanhossain11222626@gmail.com'
         navigator.clipboard.writeText(text)
@@ -9,7 +13,24 @@ const Contact = () => {
         target.title = 'email copied'
         setTimeout(() => {
             target.innerText = 'Copy Email'
-        },2000)
+        }, 2000)
+
+    }
+    const sendEmail = (e) => {
+        e.preventDefault();
+        emailjs.sendForm('service_7nr3jz7', 'template_vaizf0j', form.current, 'hml10Lf06xzriZbHa')
+            .then((result) => {
+                Swal.fire('Email sent')
+                e.target.reset()
+            }, (error) => {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'Something went wrong!',
+                })
+                console.log(error.text);
+            });
+
     }
     return (
         <>
@@ -49,27 +70,27 @@ const Contact = () => {
                         </div>
                     </div>
                 </div>
-                <form className="flex flex-col p-3 gap-3 col-span-1 lg:col-span-3">
+                <form ref={form} onSubmit={sendEmail} className="flex flex-col p-3 gap-3 col-span-1 lg:col-span-3">
                     <div className="flex flex-col gap-5"  >
 
                         <div className="flex flex-col flex-grow">
                             <label htmlFor="name">Your name</label>
-                            <input type="text" required name="name" className="sm:py-1 border-2 border-indigo-500 rounded text-lg px-1" />
+                            <input type="text" required name="from_name" className="sm:py-1 border-2 border-indigo-500 rounded text-lg px-1" />
 
                         </div>
                         <div className="flex flex-col flex-grow">
                             <label htmlFor="email">Your email</label>
-                            <input type="email" name="email" required className="border-2 border-indigo-500 rounded sm:py-1 text-lg px-1" />
+                            <input type="email" name="from_email" required className="border-2 border-indigo-500 rounded sm:py-1 text-lg px-1" />
 
                         </div>
                     </div>
 
                     <div className="flex flex-col">
                         <label htmlFor="description">Your message</label>
-                        <textarea name="description" required cols="20" rows="5" className="border-2 border-indigo-500 rounded text-lg px-1" ></textarea>
+                        <textarea name="message" required cols="20" rows="5" className="border-2 border-indigo-500 rounded text-lg px-1" ></textarea>
 
                     </div>
-                    <button className="bg-indigo-500 py-2 rounded text-white">Send Email</button>
+                    <button className="bg-indigo-500 py-2 rounded text-white hover:bg-indigo-400 active:bg-indigo-300" type='submit' value={'Send'}>Send Email</button>
                 </form>
             </div>
         </>

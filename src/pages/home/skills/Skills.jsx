@@ -21,7 +21,6 @@ const Skills = () => {
             entries.forEach(entrie => {
                 if (entrie.intersectionRatio > .3) {
                     setOnscreen(true)
-                    console.log('ola')
                 }
             })
         },
