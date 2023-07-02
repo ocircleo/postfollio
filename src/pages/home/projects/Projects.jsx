@@ -39,9 +39,9 @@ const Projects = () => {
                 <h3 className="font-semibold">Techonology : MERN</h3>
                 <h3> <span className="font-semibold">Detaill</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium magni enim saepe quo repudiandae iure eligendi autem est! Ullam perferendis modi maiores harum inventore dicta nostrum deserunt alias, voluptas consequatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, cumque. Maxime optio ut laudantium natus, accusamus hic neque quis officia eaque facilis nulla veniam quam dignissimos, esse, aliquid quod omnis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis pariatur doloribus corporis ea distinctio, soluta et impedit voluptatibus voluptatem autem quasi eos quo debitis eum velit eius libero consectetur similique fugiat? Consectetur sed minus dolore illum, molestias natus ratione fuga dolorem est labore saepe harum maxime id, sit error nisi.</h3>
                 <div className="flex justify-center gap-1 sm:gap-5 mt-4 capitalize flex-shrink flex-wrap  sticky bg-white bottom-0 py-2">
-                    <Link className="bg-indigo-500 rounded px-3 py-1 text-white">Live site</Link>
-                    <Link className="bg-indigo-500 rounded px-3 py-1 text-white">github</Link>
-                    <Link className="bg-indigo-500 rounded px-3 py-1 text-white">github (backend)</Link>
+                    <Link to={'https://assignment-11-1ffcf.web.app/'} target="_blank" className="bg-indigo-500 rounded px-3 py-1 text-white">Live site</Link>
+                    <Link to={'https://github.com/ocircleo/toy-stop'} target="_blank" className="bg-indigo-500 rounded px-3 py-1 text-white">github</Link>
+                    <Link to={'https://github.com/ocircleo/toy-stop-backend'} target="_blank" className="bg-indigo-500 rounded px-3 py-1 text-white">github (backend)</Link>
 
                 </div>
             </div>
@@ -60,9 +60,9 @@ const Projects = () => {
                 <h3 className="font-semibold">Techonology : MERN</h3>
                 <h3> <span className="font-semibold">Detaill</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium magni enim saepe quo repudiandae iure eligendi autem est! Ullam perferendis modi maiores harum inventore dicta nostrum deserunt alias, voluptas consequatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, cumque. Maxime optio ut laudantium natus, accusamus hic neque quis officia eaque facilis nulla veniam quam dignissimos, esse, aliquid quod omnis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis pariatur doloribus corporis ea distinctio, soluta et impedit voluptatibus voluptatem autem quasi eos quo debitis eum velit eius libero consectetur similique fugiat? Consectetur sed minus dolore illum, molestias natus ratione fuga dolorem est labore saepe harum maxime id, sit error nisi.</h3>
                 <div className="flex justify-center gap-1 sm:gap-5 mt-4 capitalize flex-shrink flex-wrap  sticky bg-white bottom-0 py-2">
-                    <Link className="bg-indigo-500 rounded px-3 py-1 text-white">Live site</Link>
-                    <Link className="bg-indigo-500 rounded px-3 py-1 text-white">github</Link>
-                    <Link className="bg-indigo-500 rounded px-3 py-1 text-white">github (backend)</Link>
+                    <Link to={'https://summer-music-school.web.app/'} target="_blank" className="bg-indigo-500 rounded px-3 py-1 text-white">Live site</Link>
+                    <Link to={'https://github.com/ocircleo/fluent-verse-front'} target="_blank" className="bg-indigo-500 rounded px-3 py-1 text-white">github</Link>
+                    <Link to={'https://github.com/ocircleo/fluent-verse-back'} target="_blank" className="bg-indigo-500 rounded px-3 py-1 text-white">github (backend)</Link>
 
                 </div>
             </div>
